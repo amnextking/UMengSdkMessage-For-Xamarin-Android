@@ -29,6 +29,6 @@ using Android.App;
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 // 下面请你根据官网的说明填写
-[assembly: MetaData("UMENG_APPKEY", Value = "")]
-[assembly: MetaData("UMENG_MESSAGE_SECRET", Value = "")]
+[assembly: MetaData("UMENG_APPKEY", Value = "551509c5fd98c59338000068")]
+[assembly: MetaData("UMENG_MESSAGE_SECRET", Value = "924c099009be7d6645d8471c09dfbc47")]
 [assembly: MetaData("UMENG_CHANNEL", Value = "other")]
