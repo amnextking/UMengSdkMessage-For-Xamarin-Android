@@ -4,8 +4,10 @@ using Android.Content;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Android.OS;
 using Com.Umeng.Message;
+using Android.Util;
+using Android.OS;
+using System.Threading.Tasks;
 
 namespace Sample
 {
@@ -16,10 +18,22 @@ namespace Sample
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
+
             PushAgent mPushAgent = PushAgent.GetInstance(this);
             mPushAgent.Enable();
 
-            PushAgent.GetInstance(this).OnAppStart();
+            string token = UmengRegistrar.GetRegistrationId(this);
+            Toast.MakeText(this, token, ToastLength.Long).Show();
+
+            new TaskFactory().StartNew(() =>
+            {
+                mPushAgent.AddAlias("15050851037", "test");
+            });
+        }
+
+        protected override void OnResume()
+        {
+            base.OnResume();
         }
     }
 }

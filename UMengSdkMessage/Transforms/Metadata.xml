@@ -1,21 +1,10 @@
 <metadata>
-  <!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
   <attr path="/api/package[@name='com.umeng.common.message']/class[@name='Log']/field[@name='LOG']" name="name">Logs</attr>
-  <remove-node path="/api/package[@name='com.google.protobuf']/class[@name='AbstractMessage']" />
-  <remove-node path="/api/package[@name='com.google.protobuf']/class[@name='Descriptors.FieldDescriptor.Type']/method[@name='toProto' and count(parameter)=0]" />
-  <remove-node path="/api/package[@name='com.google.protobuf']/class[@name='Descriptors.FieldDescriptor.Type']/method[@name='valueOf' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Type']]" />
-  <remove-node path="/api/package[@name='com.umeng.message.protobuffer']/interface[@name='PushMessage.PushRequestOrBuilder']/method[@name='getEncryption' and count(parameter)=0]" />
-  <remove-node path="/api/package[@name='com.google.protobuf']/class[@name='AbstractMessageLite.Builder']" />
-  <remove-node path="/api/package[@name='com.google.protobuf']/class[@name='AbstractParser']" />
-  <remove-node path="/api/package[@name='com.google.protobuf']/class[@name='ByteString']" />
-  <remove-node path="/api/package[@name='com.google.protobuf']/class[@name='Descriptors.FieldDescriptor']" />
-  <remove-node path="/api/package[@name='com.google.protobuf']/class[@name='LazyStringArrayList']" />
+  <attr path="/api/package[@name='com.google.protobuf']/interface[@name='GeneratedMessage.BuilderParent']" name="visibility">public</attr>
+  <remove-node path="/api/package[@name='com.google.protobuf']/class[@name='AbstractMessage.Builder']" />
   <remove-node path="/api/package[@name='com.google.protobuf']/class[@name='UnmodifiableLazyStringList']" />
+  <remove-node path="/api/package[@name='com.google.protobuf']/class[@name='LazyStringArrayList']" />
+  <remove-node path="/api/package[@name='com.google.protobuf']/class[@name='Descriptors.FieldDescriptor']" />
+  <remove-node path="/api/package[@name='com.google.protobuf']/class[@name='ByteString']" />
   <remove-node path="/api/package[@name='com.umeng.message']/class[@name='UmengDownloadResourceService.DownloadResourceTask']" />
 </metadata>

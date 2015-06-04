@@ -44,6 +44,8 @@
     <None Include="Additions\AboutAdditions.txt" />
     <EmbeddedNativeLibrary Include="libs\armeabi\libcocklogic.so" />
     <EmbeddedNativeLibrary Include="libs\armeabi\libtnet-2.0.17-agoo.so" />
+    <EmbeddedNativeLibrary Include="libs\x86\libcocklogic.so" />
+    <EmbeddedNativeLibrary Include="libs\x86\libtnet-2.0.17-agoo.so" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />
